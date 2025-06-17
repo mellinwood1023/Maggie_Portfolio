@@ -72,3 +72,21 @@
   background: linear-gradient(90deg, #ff5ecb, #2EC4B6);
   box-shadow: 0 0 20px rgba(255, 94, 203, 0.3), 0 0 30px rgba(0, 212, 255, 0.3);
 }
+
+@media (max-width: 600px) {
+  .contact-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .contact-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-page form {
+    width: 100%;
+  }
+}

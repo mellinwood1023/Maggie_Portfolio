@@ -151,3 +151,16 @@
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
+@media (max-width: 600px) {
+  .slide-in {
+    font-size: 1.8rem;
+  }
+
+  .gradient-heading text {
+    font-size: 2rem;
+  }
+
+  .floating-text {
+    font-size: 1.2rem;
+  }
+}
