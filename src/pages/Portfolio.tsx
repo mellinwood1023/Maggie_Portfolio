@@ -2,7 +2,7 @@ import '../styles/Portfolio.css';
 
 function Portfolio() {
   const projects = [
-    { title: 'Fred Carberry.net', description: "Professional website with a clean and easy UI for a local realtor in Dracut, MA", link: 'https://fredcarberry.net', repo: 'https://github.com/mellinwood1023/FCarberry_Site'},
+    { title: 'Fred Carberry.net', description: "Professional website with a clean and easy UI for a local realtor. Allows contact, services represented and form submission for contact through formspree.", link: 'https://fredcarberry.net', repo: 'https://github.com/mellinwood1023/FCarberry_Site'},
     { title: 'Chef Buddy', description: "ChefBuddy is your personal AI-powered kitchen assistant. Chefbuddy will generate recipe recommendations based on ingredients you have in your pantry.", link: 'https://chefbuddy-as26.onrender.com', repo: 'https://github.com/mellinwood1023/ChefBuddy' },
     { title: 'Resume Pilot', description: "Stand out with smarter resumes - powered by AI, built by you", link: 'https://resumepilot-r1lo.onrender.com/', repo: 'https://github.com/mellinwood1023/ResumePilot' },
     { title: 'Word Scramble Game!', description: "A fast-paced, browser-based word game where players try to unscramble shuffled words before time runs out. Built with JavaScript and styled for an engaging, responsive experience, this project highlights dynamic DOM manipulation, timer logic, and clean game state management. Fun, challenging, and a great example of interactive frontend logic.", link: 'https://wordscramblinggame.netlify.app/index.html', repo: 'https://github.com/mellinwood1023/Word_Scramble' },
