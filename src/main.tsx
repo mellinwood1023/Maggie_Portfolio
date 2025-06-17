@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { createRoot } from 'react-dom/client';
-import Portfolio from './pages/Portfolio';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.tsx';  // This is your top-level component      // Optional global styles
+import './styles/global.css'; // Assuming you have a global CSS file
 
-function App(): React.ReactElement {
-  return <Portfolio />;
-}
-
-const root = createRoot(document.getElementById('root') as HTMLElement);
-root.render(<App />);
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App /> {/* App is where your routing lives */}
+  </React.StrictMode>
+);

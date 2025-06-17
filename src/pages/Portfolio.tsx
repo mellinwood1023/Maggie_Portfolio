@@ -1,4 +1,4 @@
-import './Portfolio.css';
+import '../styles/Portfolio.css';
 
 function Portfolio() {
   const projects = [
@@ -19,7 +19,9 @@ function Portfolio() {
       </section>
 
       <section className="featured-projects">
+        <div className="description">
         <h2>Featured Projects</h2>
+        </div>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
