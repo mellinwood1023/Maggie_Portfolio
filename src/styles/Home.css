@@ -20,7 +20,7 @@
 
 .hero-title {
   font-size: clamp(2rem, 8vw, 5rem);
-  font-weight: 800;
+  font-weight: 700;
   background: linear-gradient(90deg, #2EC4B6, #ff4294, #fcd35c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -29,6 +29,9 @@
   letter-spacing: 2px;
   animation: fadeInUp 1s ease forwards;
   opacity: 0;
+  font-family: "Dancing Script", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .hero-subtitle {
