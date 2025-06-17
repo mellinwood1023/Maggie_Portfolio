@@ -2,31 +2,40 @@ import '../styles/Portfolio.css';
 
 function Portfolio() {
   const projects = [
-    { title: 'Project One', link: 'https://example.com/project1', repo: 'https://github.com/user/project1' },
-    { title: 'Project Two', link: 'https://example.com/project2', repo: 'https://github.com/user/project2' },
-    { title: 'Project Three', link: 'https://example.com/project3', repo: 'https://github.com/user/project3' },
-    { title: 'Project Four', link: 'https://example.com/project4', repo: 'https://github.com/user/project4' },
-    { title: 'Project Five', link: 'https://example.com/project5', repo: 'https://github.com/user/project5' },
-    { title: 'Project Six', link: 'https://example.com/project6', repo: 'https://github.com/user/project6' },
+    { title: 'Fred Carberry.net', description: "Professional website with a clean and easy UI for a local realtor in Dracut, MA", link: 'https://fredcarberry.net', repo: 'https://github.com/mellinwood1023/FCarberry_Site'},
+    { title: 'Chef Buddy', description: "ChefBuddy is your personal AI-powered kitchen assistant. Chefbuddy will generate recipe recommendations based on ingredients you have in your pantry.", link: 'https://chefbuddy-as26.onrender.com', repo: 'https://github.com/mellinwood1023/ChefBuddy' },
+    { title: 'Resume Pilot', description: "Stand out with smarter resumes - powered by AI, built by you", link: 'https://resumepilot-r1lo.onrender.com/', repo: 'https://github.com/mellinwood1023/ResumePilot' },
+    { title: 'Project Four', description: "", link: 'https://example.com/project4', repo: 'https://github.com/user/project4' },
+    { title: 'Project Five', description: "", link: 'https://example.com/project5', repo: 'https://github.com/user/project5' },
+    { title: 'Project Six', description: "", link: 'https://example.com/project6', repo: 'https://github.com/user/project6' },
   ];
 
   return (
     <main>
       <section className="hero">
-        <h1>Maggie Ellinwood</h1>
-        <h2>Full Stack Developer</h2>
-        <p>Welcome to my portfolio! I specialize in building modern, responsive web applications.</p>
+        <h1>
+          <a className='portfolio-name'>
+            Magdalene Ellinwood</a>
+          </h1>
+        <h2>
+          <a className="portfolio-subname">
+            Full Stack Developer</a>
+          </h2>
+        <p>
+          <a className="portfolio-description">
+            Welcome to my portfolio! I specialize in building modern, responsive web applications.</a>
+          </p>
       </section>
 
       <section className="featured-projects">
         <div className="description">
-        <h2>Featured Projects</h2>
+        <h2>My Projects</h2>
         </div>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
               <h3>{project.title}</h3>
-              <p>A brief description of the project.</p>
+              <p>{project.description}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer">Deployed Application</a>
               <a href={project.repo} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </div>

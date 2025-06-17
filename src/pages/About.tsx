@@ -1,15 +1,23 @@
-// import './About.css';
+import '../styles/About.css';
 
-const myPhoto = '/Myphoto.jpg';
-
-function About() {
+export default function About() {
   return (
-    <div className="about">
-      <img src={myPhoto} alt="Maggie Ellinwood - Developer Avatar" className="avatar" />
-      <h1>About Me</h1>
-      <p>Welcome to my portfolio! I am a passionate developer with a love for creating modern, responsive web applications. I specialize in React, TypeScript, and CSS to build sleek and functional designs.</p>
-    </div>
+    <section className="about-section">
+      <div className="about-image">
+        <img src={"/images/Myphoto.jpg"} alt="Magdalene Ellinwood" />
+      </div>
+      <div className="about-text">
+        <h1>Me</h1>
+        <p>
+          Hi, I’m Magdalene — a Junior Software Developer with a passion for building clean, modern web applications.
+        </p>
+        <p>
+          With a background in oral surgery and a love for solving problems, I bring both technical skill and real-world experience to every project I take on.
+        </p>
+        <p>
+          I specialize in React, TypeScript, Express, GraphQL and more. Outside of coding, you’ll find me exploring design, music, or fishing by the lake.
+        </p>
+      </div>
+    </section>
   );
 }
-
-export default About;

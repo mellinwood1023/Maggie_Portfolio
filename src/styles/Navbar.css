@@ -1,33 +1,95 @@
 .navbar {
+  background-color: #000;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color:#FFBF69;
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 30px #ffffff;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
   list-style: none;
+  gap: 1.5rem;
 }
 
-.nav-links a {
+.nav-links li a {
+  color: #2EC4B6;
   text-decoration: none;
-  color: #333;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
-  color: #0070f3;
+.nav-links li a:hover,
+.nav-links li.active a {
+    color:#ffffff;
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 30px #ffffff;
 }
 
-.nav-links a.active {
-  color: #0070f3;
-  font-weight: bold;
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #00d4ff;
+  cursor: pointer;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #000;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
 }

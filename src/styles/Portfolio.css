@@ -21,6 +21,19 @@ main {
   margin-bottom: 1rem;
 }
 
+.portfolio-name {
+  font-size: 2rem;
+}
+
+.portfolio-subname {
+  font-size: 1.5rem;
+}
+
+.portfolio-description {
+  color: #555;
+  text-align: left;
+}
+
 .featured-projects {
   display: flex;
   gap: 2rem;

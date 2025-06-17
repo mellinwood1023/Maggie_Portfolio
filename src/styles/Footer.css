@@ -1,0 +1,37 @@
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 0.75rem 1rem; /* smaller padding */
+  font-size: 0.8rem; /* thinner text */
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid #2EC4B6; /* optional accent line */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+/* Make links visually pop but accessible */
+.footer a {
+  color: #2EC4B6;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+/* Optional: space between paragraphs */
+.footer p {
+  margin: 0.3rem 0;
+  line-height: 1.2;
+}
