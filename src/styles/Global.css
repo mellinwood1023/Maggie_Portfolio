@@ -119,3 +119,13 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #FFBF69;
 }
+
+@media (hover: none), (pointer: coarse) {
+  body, * {
+    cursor: default !important;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+}
