@@ -7,7 +7,7 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Home from './pages/Home';
 import { useEffect, useRef } from 'react';
-import './styles/global.css';
+import 'src\styles\Global.css';
 
 function App() {
     const cursorRef = useRef<HTMLDivElement>(null);
