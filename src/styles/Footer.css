@@ -1,15 +1,14 @@
 .footer {
   background-color: #000;
   color: white;
-  padding: 0.75rem 1rem; /* smaller padding */
-  font-size: 0.8rem; /* thinner text */
-  text-align: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: auto;
-  border-top: 1px solid #2EC4B6; /* optional accent line */
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  border-top: 1px solid #2EC4B6;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -17,8 +16,41 @@
   z-index: 10;
 }
 
+/* LEFT: Recognition */
+.footer-left {
+  text-align: left;
+  flex: 1;
+}
 
-/* Make links visually pop but accessible */
+/* CENTER: Links */
+.footer-center {
+  text-align: center;
+  flex: 1;
+}
+
+/* RIGHT: Contact */
+.footer-contact {
+  text-align: right;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.footer-button {
+  display: inline-block;
+  background-color: #012c28;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 0.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #1aa69a;
+}
+
 .footer a {
   color: #2EC4B6;
   text-decoration: none;
@@ -30,8 +62,29 @@
 .footer a:hover {
   color: #ffffff;
 }
-/* Optional: space between paragraphs */
+
 .footer p {
   margin: 0.3rem 0;
   line-height: 1.2;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-contact {
+    flex: unset;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
 }

@@ -1,21 +1,19 @@
 import '../styles/Resume.css';
 
-function Resume() {
+export default function Resume() {
   return (
-    <div className="resume-page">
-      <h1>Resume</h1>
-      <a href="/Resume_2025.pdf" download="Resume_2025.pdf" className="resume-download">Download My Resume</a>
-      <h2>Proficiencies</h2>
-      <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>Node.js</li>
-        <li>CSS</li>
-        <li>HTML</li>
-      </ul>
-    </div>
+    <section className="resume-section">
+      <h2 className="resume-heading">📄 My Resume</h2>
+      <p className="resume-description">
+        Click below to download my resume and learn more about my background, skills, and experience.
+      </p>
+      <a
+        href="public\images\Resume_2025.pdf"
+        download
+        className="resume-download"
+      >
+        ⬇️ Download Resume
+      </a>
+    </section>
   );
 }
-
-export default Resume;

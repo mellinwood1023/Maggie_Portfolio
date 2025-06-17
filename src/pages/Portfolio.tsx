@@ -13,6 +13,7 @@ function Portfolio() {
   return (
     <main>
       <section className="hero">
+        <div className="title-bar">
         <h1>
           <a className='portfolio-name'>
             Magdalene Ellinwood</a>
@@ -21,6 +22,7 @@ function Portfolio() {
           <a className="portfolio-subname">
             Full Stack Developer</a>
           </h2>
+        </div>
         <p>
           <a className="portfolio-description">
             Welcome to my portfolio! I specialize in building modern, responsive web applications.</a>
@@ -36,26 +38,10 @@ function Portfolio() {
             <div key={index} className="project-card">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">Deployed Application</a>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">{project.link}</a>
               <a href={project.repo} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section className="contact">
-        <div className="contact-container">
-          <h2>Contact Me</h2>
-          <p className="text-gray-700 mb-4">
-        
-          </p>
-          <p>Feel free to reach out ❤️</p>
-          <a 
-            href="mailto:mellinwood1023.com" 
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition"
-          >
-            📧 Get in Touch
-          </a>
         </div>
       </section>
     </main>
