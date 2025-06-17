@@ -1,10 +1,6 @@
 import '../styles/Contact.css';
 
 function Contact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    alert('Form submitted!');
-  };
 
   return (
     <div className="contact-page">
@@ -16,7 +12,8 @@ function Contact() {
         </div>
         <h1>Contact Me</h1>
         <p>Interested in working together or have questions about my work? I'm open to freelance projects, full-time roles, and collaborative opportunities. Feel free to reach out—I'll get back to you as soon as possible.</p>
-        <form onSubmit={handleSubmit}>
+        <form action="https://formsubmit.co/mellinwood1023@gmail.com" method="POST">
+
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
