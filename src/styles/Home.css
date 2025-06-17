@@ -12,20 +12,42 @@
 
 /* Header with centered content */
 
-.gradient-heading {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 6 / 1;
-  display: block;
+.hero-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.gradient-heading text {
-  font-size: 5vw; /* scales with screen width */
-  font-weight: 900;
-  fill: url(#gradient);
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 1px;
+.hero-title {
+  font-size: clamp(2rem, 8vw, 5rem);
+  font-weight: 800;
+  background: linear-gradient(90deg, #2EC4B6, #ff4294, #fcd35c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0.5rem;
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .glow-wrapper {
@@ -170,13 +192,13 @@
 }
 
 @media (max-width: 768px) {
-  .gradient-heading {
-    font-size: 3rem;
+  .gradient-heading text {
+    font-size: 36px;
   }
 }
 
 @media (max-width: 480px) {
-  .gradient-heading {
-    font-size: 2.2rem;
+  .gradient-heading text {
+    font-size: 28px;
   }
 }

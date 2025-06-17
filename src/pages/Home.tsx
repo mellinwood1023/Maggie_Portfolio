@@ -6,31 +6,10 @@ export default function Home() {
     <section className="home">
       <header>
         <h1 className="slide-in">
-        <div className="glow-wrapper">
-<svg
-  className="gradient-heading"
-  viewBox="0 0 600 100"
-  preserveAspectRatio="xMidYMid meet"
->
-  <defs>
-    <linearGradient id="gradient" gradientTransform="rotate(90)">
-      <stop offset="55%" stop-color="#2EC4B6"></stop>
-      <stop offset="70%" stop-color="#9DEBDA"></stop>
-      <stop offset="20%" stop-color="#2EC4B6"></stop>
-    </linearGradient>
-  </defs>
-  <text
-    x="50%"
-    y="50%"
-    textAnchor="middle"
-    dominantBaseline="middle"
-    className="gradient-text"
-  >
-    Hello, I'm Maggie
-  </text>
-</svg>
-
-        </div>
+  <div className="hero-header">
+    <h1 className="hero-title">Maggie Ellinwood</h1>
+    <h2 className="hero-subtitle">Problem Solver. Code Writer. Project Builder.</h2>
+  </div>
         </h1>
       </header>
       <div className="paragraph-container">
