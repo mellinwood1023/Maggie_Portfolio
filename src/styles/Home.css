@@ -13,15 +13,18 @@
 
 .gradient-heading {
   width: 100%;
-  height: 120px;
-  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 6 / 1;
+  display: block;
 }
 
 .gradient-heading text {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 5vw; /* scales with screen width */
+  font-weight: 900;
   fill: url(#gradient);
-  letter-spacing: 1.5px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
 
 .glow-wrapper {
@@ -153,11 +156,11 @@
 
 @media (max-width: 600px) {
   .slide-in {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: 1.8rem;
   }
 
   .gradient-heading text {
-    font-size: 2rem;
+    font-size: 8vw;
   }
 
   .floating-text {

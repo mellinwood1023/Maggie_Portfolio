@@ -7,18 +7,28 @@ export default function Home() {
       <header>
         <h1 className="slide-in">
         <div className="glow-wrapper">
-            <svg className="gradient-heading" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-                <defs>
-                    <linearGradient id="gradient" gradientTransform="rotate(90)">
-                        <stop offset="55%" stopColor="#2EC4B6" />
-                        <stop offset="70%" stopColor="#9DEBDA" />
-                        <stop offset="20%" stopColor="#2EC4B6" />
-                    </linearGradient>
-                </defs>
-                <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle">
-                    Hello, I’m Maggie
-                </text>
-            </svg>
+<svg
+  className="gradient-heading"
+  viewBox="0 0 600 100"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <defs>
+    <linearGradient id="gradient" gradientTransform="rotate(90)">
+      <stop offset="0%" stopColor="#2EC4B6" />
+      <stop offset="100%" stopColor="#ff5ecb" />
+    </linearGradient>
+  </defs>
+  <text
+    x="50%"
+    y="50%"
+    textAnchor="middle"
+    dominantBaseline="middle"
+    className="gradient-text"
+  >
+    Hello, I'm Maggie
+  </text>
+</svg>
+
         </div>
         </h1>
       </header>
