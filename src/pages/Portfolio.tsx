@@ -7,7 +7,7 @@ function Portfolio() {
     { title: 'Resume Pilot', description: "Stand out with smarter resumes - powered by AI, built by you", link: 'https://resumepilot-r1lo.onrender.com/', repo: 'https://github.com/mellinwood1023/ResumePilot' },
     { title: 'Word Scramble Game!', description: "A fast-paced, browser-based word game where players try to unscramble shuffled words before time runs out. Built with JavaScript and styled for an engaging, responsive experience, this project highlights dynamic DOM manipulation, timer logic, and clean game state management. Fun, challenging, and a great example of interactive frontend logic.", link: 'https://wordscramblinggame.netlify.app/index.html', repo: 'https://github.com/mellinwood1023/Word_Scramble' },
     { title: 'My Portfolio Repo', description: "Here is a direct link to my repository for this portfolio!", link: 'https://maggieee.netlify.app/', repo: 'https://github.com/mellinwood1023/Maggie_Portfolio' },
-    { title: 'Project Six', description: "", link: 'https://example.com/project6', repo: 'https://github.com/user/project6' },
+    { title: 'Project Six - in progress', description: "", link: 'https://example.com/project6', repo: 'https://github.com/user/project6' },
   ];
 
   return (
