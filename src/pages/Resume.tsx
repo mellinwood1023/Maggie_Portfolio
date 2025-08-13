@@ -8,7 +8,7 @@ export default function Resume() {
         Click below to download my resume and learn more about my background, skills, and experience.
       </p>
       <a
-        href="/images/Magdalene Ellinwood Resume.pdf"
+        href="/images/Magdalene_Ellinwood_2025Resume.pdf"
         download
         className="resume-download"
       >
