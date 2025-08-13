@@ -15,7 +15,7 @@ export default function Home() {
       <div className="paragraph-container">
         {/* <p className="slide-in1">Full Stack Developer</p> */}
         <div className="floating-text">
-            <p className="slide-in2">Hello 😊</p>
+            <p className="slide-in2">✧</p>
             </div>
         <p className="slide-in3">
           <div className="p">Browse through my projects and see what I’ve been building.</div>
