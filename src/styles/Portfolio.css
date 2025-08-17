@@ -67,7 +67,7 @@ main {
   display: inline-block;
   padding-bottom: 0.5rem;
   letter-spacing: 1px;
-  background: linear-gradient(to right, #2EC4B6, #ff5ecb);
+  background: linear-gradient(to right, #2EC4B6, #2a867c);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -125,7 +125,7 @@ main {
 }
 
 .project-card h3 {
-  background: linear-gradient(90deg, #2EC4B6, #ff5e99);
+  background: linear-gradient(90deg, #2EC4B6, #155852, #2EC4B6);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 8px;
