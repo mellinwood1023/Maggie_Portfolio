@@ -7,8 +7,8 @@ export default function Home() {
       <header>
         <h1 className="slide-in">
   <div className="hero-header">
-    <h1 className="hero-title">Maggie Ellinwood</h1>
-    <h2 className="hero-subtitle">Problem Solver. Code Writer. Project Builder.</h2>
+    <h1 className="hero-title">Welcome</h1>
+    <h2 className="hero-subtitle"></h2>
   </div>
         </h1>
       </header>
